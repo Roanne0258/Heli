@@ -8,7 +8,7 @@
 - **W/S 키로 상승 및 하강 구현 **
 - **A/D 키로 회전, 마우스로 기울기 조작 (Tilt)**
 - **Enhanced Input을 활용한 입력 처리**
-- **중력 효과 없이 직접 속도를 조절하여 이동**
+- **물리 및 중력 효과를 활성화하여 자연스러운 이동 구현**
 
 ## 📂 프로젝트 구조
 ```
@@ -62,7 +62,8 @@ AMyCustomPawn::AMyCustomPawn()
     CollisionComp->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
     CollisionComp->SetCollisionObjectType(ECollisionChannel::ECC_Pawn);
     CollisionComp->SetCollisionResponseToAllChannels(ECR_Block);
-    CollisionComp->SetSimulatePhysics(false); // 중력 효과 없음
+    SetSimulatePhysics(true);
+    SetEnableGravity(true);
 }
 ```
 
