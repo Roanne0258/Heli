@@ -1,4 +1,4 @@
-# Unreal Engine 5 - Custom Pawn Movement System (No Gravity)
+# Unreal Engine 5 - Custom Pawn Movement System
 
 ## 📌 프로젝트 개요
 이 프로젝트는 `Pawn` 클래스를 활용하여 **CharacterMovementComponent 없이 직접 이동을 구현하는 예제**입니다.
