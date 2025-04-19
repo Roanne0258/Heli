@@ -17,8 +17,8 @@ AMyCustomPawn::AMyCustomPawn()
 	CollisionComp->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
 	CollisionComp->SetCollisionObjectType(ECollisionChannel::ECC_Pawn);
 	CollisionComp->SetCollisionResponseToAllChannels(ECR_Block);
-	CollisionComp->SetSimulatePhysics(false);
-	CollisionComp->SetEnableGravity(false); // 중력
+	CollisionComp->SetSimulatePhysics(true); // 물리
+	CollisionComp->SetEnableGravity(true); // 중력
 	CollisionComp->SetLinearDamping(2.0f); // 공기 저항
 	CollisionComp->SetAngularDamping(2.0f); // 회전 저항
 
