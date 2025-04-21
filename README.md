@@ -140,6 +140,7 @@ void AMyCustomPawn::HeliTilt(const FInputActionValue& Value)
 ## 🛠️ 향후 추가 예정
 - 더 현실적인 헬기 조작감 추가
 
+## 영상
 ![2025-04-21 19-45-38](https://github.com/user-attachments/assets/a154ec27-cb24-40e3-ac67-4245aa0b7237)
 
 ## 📜 라이선스
