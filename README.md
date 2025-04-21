@@ -1,14 +1,16 @@
 # Unreal Engine 5 - Custom Pawn Movement System
 
 ## 📌 프로젝트 개요
-이 프로젝트는 `Pawn` 클래스를 활용하여 **CharacterMovementComponent 없이 직접 이동을 구현하는 예제**입니다.
+이 프로젝트는 `Pawn` 클래스를 활용하여 **CharacterMovementComponent 없이도 물리 및 중력 효과를 포함한 이동을 직접 구현한 예제**입니다.
+
+외부 FBX 모델을 병합하여 Skeletal Mesh로 변환한 뒤, Custom Pawn에 적용해 헬리콥터 형태의 이동 시스템을 구성하였습니다.
 
 ## 🚀 주요 기능
 - **Pawn 기반 이동 구현 (CharacterMovementComponent 사용 X)**
 - **W/S 키로 상승 및 하강 구현 **
 - **A/D 키로 회전, 마우스로 기울기 조작 (Tilt)**
 - **Enhanced Input을 활용한 입력 처리**
-- **중력 효과 없이 직접 속도를 조절하여 이동**
+- **물리 및 중력 효과를 활성화하여 자연스러운 이동 구현**
 
 ## 📂 프로젝트 구조
 ```
@@ -62,7 +64,8 @@ AMyCustomPawn::AMyCustomPawn()
     CollisionComp->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
     CollisionComp->SetCollisionObjectType(ECollisionChannel::ECC_Pawn);
     CollisionComp->SetCollisionResponseToAllChannels(ECR_Block);
-    CollisionComp->SetSimulatePhysics(false); // 중력 효과 없음
+    SetSimulatePhysics(true);
+    SetEnableGravity(true);
 }
 ```
 
@@ -135,9 +138,10 @@ void AMyCustomPawn::HeliTilt(const FInputActionValue& Value)
 ```
 
 ## 🛠️ 향후 추가 예정
-- 중력 적용 및 자연스러운 낙하 구현
 - 더 현실적인 헬기 조작감 추가
-- 헬기 모델 적용
+
+## 영상
+![2025-04-21 19-45-38](https://github.com/user-attachments/assets/a154ec27-cb24-40e3-ac67-4245aa0b7237)
 
 ## 📜 라이선스
 이 프로젝트는 자유롭게 수정 및 배포할 수 있습니다. 사용 시 출처를 남겨주세요! 🚀
