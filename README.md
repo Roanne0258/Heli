@@ -1,7 +1,9 @@
 # Unreal Engine 5 - Custom Pawn Movement System
 
 ## 📌 프로젝트 개요
-이 프로젝트는 `Pawn` 클래스를 활용하여 **CharacterMovementComponent 없이 직접 이동을 구현하는 예제**입니다.
+이 프로젝트는 `Pawn` 클래스를 활용하여 **CharacterMovementComponent 없이도 물리 및 중력 효과를 포함한 이동을 직접 구현한 예제**입니다.
+
+외부 FBX 모델을 병합하여 Skeletal Mesh로 변환한 뒤, Custom Pawn에 적용해 헬리콥터 형태의 이동 시스템을 구성하였습니다.
 
 ## 🚀 주요 기능
 - **Pawn 기반 이동 구현 (CharacterMovementComponent 사용 X)**
