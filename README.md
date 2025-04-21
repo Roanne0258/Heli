@@ -138,9 +138,9 @@ void AMyCustomPawn::HeliTilt(const FInputActionValue& Value)
 ```
 
 ## 🛠️ 향후 추가 예정
-- 중력 적용 및 자연스러운 낙하 구현
 - 더 현실적인 헬기 조작감 추가
-- 헬기 모델 적용
+
+![2025-04-21 19-45-38](https://github.com/user-attachments/assets/a154ec27-cb24-40e3-ac67-4245aa0b7237)
 
 ## 📜 라이선스
 이 프로젝트는 자유롭게 수정 및 배포할 수 있습니다. 사용 시 출처를 남겨주세요! 🚀
