@@ -3,11 +3,11 @@
 ## 📌 프로젝트 개요
 이 프로젝트는 `Pawn` 클래스를 활용하여 **CharacterMovementComponent 없이도 물리 및 중력 효과를 포함한 이동을 직접 구현한 예제**입니다.
 
-외부 FBX 모델을 병합하여 Skeletal Mesh로 변환한 뒤, Custom Pawn에 적용해 헬리콥터 형태의 이동 시스템을 구성하였습니다.
+외부 FBX 모델을 병합하여 Skeletal Mesh로 변환한 뒤, Custom Pawn에 적용해 헬리콥터 형태의 이동 시스템을 구성하였습니다. (워록 게임의 헬리콥터 움직임을 생각하며 구현)
 
 ## 🚀 주요 기능
 - **Pawn 기반 이동 구현 (CharacterMovementComponent 사용 X)**
-- **W/S 키로 상승 및 하강 구현 **
+- **W/S 키로 상승 및 하강 구현**
 - **A/D 키로 회전, 마우스로 기울기 조작 (Tilt)**
 - **Enhanced Input을 활용한 입력 처리**
 - **물리 및 중력 효과를 활성화하여 자연스러운 이동 구현**
